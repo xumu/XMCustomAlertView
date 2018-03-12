@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CAAnimationBlocks" "${PODS_ROOT}/Headers/Public/RBBAnimation" "${PODS_ROOT}/Headers/Public/TTTAttributedLabel"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CAAnimationBlocks" "${PODS_CONFIGURATION_BUILD_DIR}/RBBAnimation" "${PODS_CONFIGURATION_BUILD_DIR}/TTTAttributedLabel"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CAAnimationBlocks" -isystem "${PODS_ROOT}/Headers/Public/RBBAnimation" -isystem "${PODS_ROOT}/Headers/Public/TTTAttributedLabel"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CAAnimationBlocks" -l"RBBAnimation" -l"TTTAttributedLabel" -framework "CoreGraphics" -framework "CoreText" -framework "QuartzCore" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

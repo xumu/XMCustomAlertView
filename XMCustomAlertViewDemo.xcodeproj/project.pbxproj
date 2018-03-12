@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D768C4320558328009CC72D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C4220558328009CC72D /* AppDelegate.m */; };
+		9D768C4620558328009CC72D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C4520558328009CC72D /* ViewController.m */; };
+		9D768C4920558328009CC72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D768C4720558328009CC72D /* Main.storyboard */; };
+		9D768C4B20558328009CC72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D768C4A20558328009CC72D /* Assets.xcassets */; };
+		9D768C4E20558328009CC72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D768C4C20558328009CC72D /* LaunchScreen.storyboard */; };
+		9D768C5120558328009CC72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C5020558328009CC72D /* main.m */; };
+		9D768C98205583E6009CC72D /* XMEmbeddedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C5B205583E6009CC72D /* XMEmbeddedViewController.m */; };
+		9D768C99205583E6009CC72D /* XMAlertCutomViewClickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C5D205583E6009CC72D /* XMAlertCutomViewClickView.m */; };
+		9D768C9A205583E6009CC72D /* XMCustomAlertViewButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C5E205583E6009CC72D /* XMCustomAlertViewButtonCell.m */; };
+		9D768C9B205583E6009CC72D /* XMCustomAlertViewModelExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C60205583E6009CC72D /* XMCustomAlertViewModelExtension.m */; };
+		9D768C9C205583E6009CC72D /* XMCustomAlertViewIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C62205583E6009CC72D /* XMCustomAlertViewIdentifier.m */; };
+		9D768CA7205583E6009CC72D /* XMCustomAlertViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C7B205583E6009CC72D /* XMCustomAlertViewTool.m */; };
+		9D768CA8205583E6009CC72D /* XMCustomAlertViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C7D205583E6009CC72D /* XMCustomAlertViewConfiguration.m */; };
+		9D768CAA205583E6009CC72D /* XMResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D768C81205583E6009CC72D /* XMResource.bundle */; };
+		9D768CAB205583E6009CC72D /* XMCustomAlertViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C84205583E6009CC72D /* XMCustomAlertViewAnimation.m */; };
+		9D768CAC205583E6009CC72D /* XMCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C85205583E6009CC72D /* XMCustomAlertView.m */; };
+		9D768CAD205583E6009CC72D /* XMCustomAlertViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C87205583E6009CC72D /* XMCustomAlertViewModel.m */; };
+		9D768CAE205583E6009CC72D /* XMCustomAlertView_CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C8B205583E6009CC72D /* XMCustomAlertView_CustomView.m */; };
+		9D768CAF205583E6009CC72D /* XMCustomAlertViewAutoDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D768C8E205583E6009CC72D /* XMCustomAlertViewAutoDismiss.m */; };
+		B074C13F83407A04E6ADA833 /* libPods-XMCustomAlertViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA1F174AA728525DA607205 /* libPods-XMCustomAlertViewDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1025B6973FEA2039EB4662E9 /* Pods-XMCustomAlertViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMCustomAlertViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMCustomAlertViewDemo/Pods-XMCustomAlertViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4AA1F174AA728525DA607205 /* libPods-XMCustomAlertViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XMCustomAlertViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3DF70C6687BAE334D6156E /* Pods-XMCustomAlertViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMCustomAlertViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMCustomAlertViewDemo/Pods-XMCustomAlertViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9D768C3E20558328009CC72D /* XMCustomAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMCustomAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D768C4120558328009CC72D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D768C4220558328009CC72D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D768C4420558328009CC72D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9D768C4520558328009CC72D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9D768C4820558328009CC72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D768C4A20558328009CC72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D768C4D20558328009CC72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D768C4F20558328009CC72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D768C5020558328009CC72D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D768C59205583E6009CC72D /* XMAlertCutomViewClickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMAlertCutomViewClickView.h; sourceTree = "<group>"; };
+		9D768C5A205583E6009CC72D /* XMCustomAlertViewButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewButtonCell.h; sourceTree = "<group>"; };
+		9D768C5B205583E6009CC72D /* XMEmbeddedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMEmbeddedViewController.m; sourceTree = "<group>"; };
+		9D768C5C205583E6009CC72D /* XMCustomAlertViewModelExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewModelExtension.h; sourceTree = "<group>"; };
+		9D768C5D205583E6009CC72D /* XMAlertCutomViewClickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMAlertCutomViewClickView.m; sourceTree = "<group>"; };
+		9D768C5E205583E6009CC72D /* XMCustomAlertViewButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertViewButtonCell.m; sourceTree = "<group>"; };
+		9D768C5F205583E6009CC72D /* XMEmbeddedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMEmbeddedViewController.h; sourceTree = "<group>"; };
+		9D768C60205583E6009CC72D /* XMCustomAlertViewModelExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertViewModelExtension.m; sourceTree = "<group>"; };
+		9D768C61205583E6009CC72D /* XMCustomAlertViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewModel.h; sourceTree = "<group>"; };
+		9D768C62205583E6009CC72D /* XMCustomAlertViewIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertViewIdentifier.m; sourceTree = "<group>"; };
+		9D768C7A205583E6009CC72D /* XMCustomAlertViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewTool.h; sourceTree = "<group>"; };
+		9D768C7B205583E6009CC72D /* XMCustomAlertViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertViewTool.m; sourceTree = "<group>"; };
+		9D768C7C205583E6009CC72D /* XMCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertView.h; sourceTree = "<group>"; };
+		9D768C7D205583E6009CC72D /* XMCustomAlertViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertViewConfiguration.m; sourceTree = "<group>"; };
+		9D768C81205583E6009CC72D /* XMResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XMResource.bundle; sourceTree = "<group>"; };
+		9D768C83205583E6009CC72D /* XMCustomAlertViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewAnimation.h; sourceTree = "<group>"; };
+		9D768C84205583E6009CC72D /* XMCustomAlertViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertViewAnimation.m; sourceTree = "<group>"; };
+		9D768C85205583E6009CC72D /* XMCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertView.m; sourceTree = "<group>"; };
+		9D768C86205583E6009CC72D /* XMCustomAlertViewIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewIdentifier.h; sourceTree = "<group>"; };
+		9D768C87205583E6009CC72D /* XMCustomAlertViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertViewModel.m; sourceTree = "<group>"; };
+		9D768C88205583E6009CC72D /* XMCustomAlertViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewConfiguration.h; sourceTree = "<group>"; };
+		9D768C8A205583E6009CC72D /* XMCustomAlertView_CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertView_CustomView.h; sourceTree = "<group>"; };
+		9D768C8B205583E6009CC72D /* XMCustomAlertView_CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertView_CustomView.m; sourceTree = "<group>"; };
+		9D768C8C205583E6009CC72D /* XMCustomAlertView+CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMCustomAlertView+CustomView.h"; sourceTree = "<group>"; };
+		9D768C8E205583E6009CC72D /* XMCustomAlertViewAutoDismiss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertViewAutoDismiss.m; sourceTree = "<group>"; };
+		9D768C8F205583E6009CC72D /* XMCustomAlertViewAutoDismiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewAutoDismiss.h; sourceTree = "<group>"; };
+		9D768C91205583E6009CC72D /* XMCustomAlertViewPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewPush.h; sourceTree = "<group>"; };
+		9D768C92205583E6009CC72D /* XMCustomAlertView_Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertView_Define.h; sourceTree = "<group>"; };
+		9D768C97205583E6009CC72D /* XMCustomAlertViewUniqueness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewUniqueness.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D768C3B20558328009CC72D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B074C13F83407A04E6ADA833 /* libPods-XMCustomAlertViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F9F85D94E0CCCC2A71BDF7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E3DF70C6687BAE334D6156E /* Pods-XMCustomAlertViewDemo.debug.xcconfig */,
+				1025B6973FEA2039EB4662E9 /* Pods-XMCustomAlertViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D768C3520558328009CC72D = {
+			isa = PBXGroup;
+			children = (
+				9D768C4020558328009CC72D /* XMCustomAlertViewDemo */,
+				9D768C3F20558328009CC72D /* Products */,
+				5F9F85D94E0CCCC2A71BDF7D /* Pods */,
+				C341FB5A0C0412C31B48BFC0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D768C3F20558328009CC72D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C3E20558328009CC72D /* XMCustomAlertViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D768C4020558328009CC72D /* XMCustomAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C57205583E6009CC72D /* CustomAlertView */,
+				9D768C4120558328009CC72D /* AppDelegate.h */,
+				9D768C4220558328009CC72D /* AppDelegate.m */,
+				9D768C4420558328009CC72D /* ViewController.h */,
+				9D768C4520558328009CC72D /* ViewController.m */,
+				9D768C4720558328009CC72D /* Main.storyboard */,
+				9D768C4A20558328009CC72D /* Assets.xcassets */,
+				9D768C4C20558328009CC72D /* LaunchScreen.storyboard */,
+				9D768C4F20558328009CC72D /* Info.plist */,
+				9D768C5020558328009CC72D /* main.m */,
+			);
+			path = XMCustomAlertViewDemo;
+			sourceTree = "<group>";
+		};
+		9D768C57205583E6009CC72D /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C92205583E6009CC72D /* XMCustomAlertView_Define.h */,
+				9D768C7C205583E6009CC72D /* XMCustomAlertView.h */,
+				9D768C85205583E6009CC72D /* XMCustomAlertView.m */,
+				9D768C88205583E6009CC72D /* XMCustomAlertViewConfiguration.h */,
+				9D768C7D205583E6009CC72D /* XMCustomAlertViewConfiguration.m */,
+				9D768C61205583E6009CC72D /* XMCustomAlertViewModel.h */,
+				9D768C87205583E6009CC72D /* XMCustomAlertViewModel.m */,
+				9D768C86205583E6009CC72D /* XMCustomAlertViewIdentifier.h */,
+				9D768C62205583E6009CC72D /* XMCustomAlertViewIdentifier.m */,
+				9D768C89205583E6009CC72D /* CustomView */,
+				9D768C82205583E6009CC72D /* showAndDismissAnimation */,
+				9D768C90205583E6009CC72D /* MessagePushAndShow */,
+				9D768C8D205583E6009CC72D /* AutoDismiss */,
+				9D768C96205583E6009CC72D /* Uniqueness */,
+				9D768C79205583E6009CC72D /* Tools */,
+				9D768C58205583E6009CC72D /* PrivateFiles */,
+				9D768C81205583E6009CC72D /* XMResource.bundle */,
+			);
+			path = CustomAlertView;
+			sourceTree = "<group>";
+		};
+		9D768C58205583E6009CC72D /* PrivateFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C59205583E6009CC72D /* XMAlertCutomViewClickView.h */,
+				9D768C5A205583E6009CC72D /* XMCustomAlertViewButtonCell.h */,
+				9D768C5B205583E6009CC72D /* XMEmbeddedViewController.m */,
+				9D768C5C205583E6009CC72D /* XMCustomAlertViewModelExtension.h */,
+				9D768C5D205583E6009CC72D /* XMAlertCutomViewClickView.m */,
+				9D768C5E205583E6009CC72D /* XMCustomAlertViewButtonCell.m */,
+				9D768C5F205583E6009CC72D /* XMEmbeddedViewController.h */,
+				9D768C60205583E6009CC72D /* XMCustomAlertViewModelExtension.m */,
+			);
+			path = PrivateFiles;
+			sourceTree = "<group>";
+		};
+		9D768C79205583E6009CC72D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C7A205583E6009CC72D /* XMCustomAlertViewTool.h */,
+				9D768C7B205583E6009CC72D /* XMCustomAlertViewTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9D768C82205583E6009CC72D /* showAndDismissAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C83205583E6009CC72D /* XMCustomAlertViewAnimation.h */,
+				9D768C84205583E6009CC72D /* XMCustomAlertViewAnimation.m */,
+			);
+			path = showAndDismissAnimation;
+			sourceTree = "<group>";
+		};
+		9D768C89205583E6009CC72D /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C8A205583E6009CC72D /* XMCustomAlertView_CustomView.h */,
+				9D768C8B205583E6009CC72D /* XMCustomAlertView_CustomView.m */,
+				9D768C8C205583E6009CC72D /* XMCustomAlertView+CustomView.h */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		9D768C8D205583E6009CC72D /* AutoDismiss */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C8E205583E6009CC72D /* XMCustomAlertViewAutoDismiss.m */,
+				9D768C8F205583E6009CC72D /* XMCustomAlertViewAutoDismiss.h */,
+			);
+			path = AutoDismiss;
+			sourceTree = "<group>";
+		};
+		9D768C90205583E6009CC72D /* MessagePushAndShow */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C91205583E6009CC72D /* XMCustomAlertViewPush.h */,
+			);
+			path = MessagePushAndShow;
+			sourceTree = "<group>";
+		};
+		9D768C96205583E6009CC72D /* Uniqueness */ = {
+			isa = PBXGroup;
+			children = (
+				9D768C97205583E6009CC72D /* XMCustomAlertViewUniqueness.h */,
+			);
+			path = Uniqueness;
+			sourceTree = "<group>";
+		};
+		C341FB5A0C0412C31B48BFC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA1F174AA728525DA607205 /* libPods-XMCustomAlertViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D768C3D20558328009CC72D /* XMCustomAlertViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D768C5420558328009CC72D /* Build configuration list for PBXNativeTarget "XMCustomAlertViewDemo" */;
+			buildPhases = (
+				5BD44B25C052D26B0DA5566D /* [CP] Check Pods Manifest.lock */,
+				9D768C3A20558328009CC72D /* Sources */,
+				9D768C3B20558328009CC72D /* Frameworks */,
+				9D768C3C20558328009CC72D /* Resources */,
+				5BE8813F32572AA9FFB439E0 /* [CP] Embed Pods Frameworks */,
+				4A6DC33F14AB4412CA1C2A5A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMCustomAlertViewDemo;
+			productName = XMCustomAlertViewDemo;
+			productReference = 9D768C3E20558328009CC72D /* XMCustomAlertViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D768C3620558328009CC72D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = F_knight;
+				TargetAttributes = {
+					9D768C3D20558328009CC72D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9D768C3920558328009CC72D /* Build configuration list for PBXProject "XMCustomAlertViewDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D768C3520558328009CC72D;
+			productRefGroup = 9D768C3F20558328009CC72D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D768C3D20558328009CC72D /* XMCustomAlertViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D768C3C20558328009CC72D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D768C4E20558328009CC72D /* LaunchScreen.storyboard in Resources */,
+				9D768C4B20558328009CC72D /* Assets.xcassets in Resources */,
+				9D768CAA205583E6009CC72D /* XMResource.bundle in Resources */,
+				9D768C4920558328009CC72D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A6DC33F14AB4412CA1C2A5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMCustomAlertViewDemo/Pods-XMCustomAlertViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD44B25C052D26B0DA5566D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMCustomAlertViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE8813F32572AA9FFB439E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMCustomAlertViewDemo/Pods-XMCustomAlertViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D768C3A20558328009CC72D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D768C4620558328009CC72D /* ViewController.m in Sources */,
+				9D768CAB205583E6009CC72D /* XMCustomAlertViewAnimation.m in Sources */,
+				9D768CA8205583E6009CC72D /* XMCustomAlertViewConfiguration.m in Sources */,
+				9D768C5120558328009CC72D /* main.m in Sources */,
+				9D768CAD205583E6009CC72D /* XMCustomAlertViewModel.m in Sources */,
+				9D768CA7205583E6009CC72D /* XMCustomAlertViewTool.m in Sources */,
+				9D768C4320558328009CC72D /* AppDelegate.m in Sources */,
+				9D768C9A205583E6009CC72D /* XMCustomAlertViewButtonCell.m in Sources */,
+				9D768C99205583E6009CC72D /* XMAlertCutomViewClickView.m in Sources */,
+				9D768CAE205583E6009CC72D /* XMCustomAlertView_CustomView.m in Sources */,
+				9D768C98205583E6009CC72D /* XMEmbeddedViewController.m in Sources */,
+				9D768CAC205583E6009CC72D /* XMCustomAlertView.m in Sources */,
+				9D768C9C205583E6009CC72D /* XMCustomAlertViewIdentifier.m in Sources */,
+				9D768C9B205583E6009CC72D /* XMCustomAlertViewModelExtension.m in Sources */,
+				9D768CAF205583E6009CC72D /* XMCustomAlertViewAutoDismiss.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D768C4720558328009CC72D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D768C4820558328009CC72D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D768C4C20558328009CC72D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D768C4D20558328009CC72D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D768C5220558328009CC72D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D768C5320558328009CC72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D768C5520558328009CC72D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3DF70C6687BAE334D6156E /* Pods-XMCustomAlertViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XMCustomAlertViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xumu.com.gitbug.www.XMCustomAlertViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D768C5620558328009CC72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1025B6973FEA2039EB4662E9 /* Pods-XMCustomAlertViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XMCustomAlertViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xumu.com.gitbug.www.XMCustomAlertViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D768C3920558328009CC72D /* Build configuration list for PBXProject "XMCustomAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D768C5220558328009CC72D /* Debug */,
+				9D768C5320558328009CC72D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D768C5420558328009CC72D /* Build configuration list for PBXNativeTarget "XMCustomAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D768C5520558328009CC72D /* Debug */,
+				9D768C5620558328009CC72D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D768C3620558328009CC72D /* Project object */;
+}

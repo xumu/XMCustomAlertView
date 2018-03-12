@@ -1,0 +1,18 @@
+PODS:
+  - CAAnimationBlocks (0.0.1)
+  - RBBAnimation (0.3.0)
+  - TTTAttributedLabel (2.0.0)
+
+DEPENDENCIES:
+  - CAAnimationBlocks (~> 0.0.1)
+  - RBBAnimation (~> 0.3.0)
+  - TTTAttributedLabel (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  CAAnimationBlocks: 1aaca5fb6447a95d83b20cc786992956ef46e4ee
+  RBBAnimation: cb6cb419f511434ce932f7d0fabf369612fafb4e
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+
+PODFILE CHECKSUM: d3822b68e88a9e8cf905f8d31e71e553158cde3c
+
+COCOAPODS: 1.4.0

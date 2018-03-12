@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E832B6670106D266CADE1AD4BFCE49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		09942E83C4A50A3D7D63DA2AD30F1F4D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59D694A9020F0959A3D1601E40BACC9 /* CoreText.framework */; };
+		0F85880D08C31D8F7413BB0F3F68080E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		1A3D6569DAF7CE55594A482205F5EA30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2B04BC1935A86EB34129AA71C7D83 /* UIKit.framework */; };
+		25A48B2242B9499A92155F6764425D3F /* Pods-XMCustomAlertViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F0801EA3D041AB12F0B1DF3A1B1D3 /* Pods-XMCustomAlertViewDemo-dummy.m */; };
+		2A6A5029939CE815234A03238ED64F9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4EE262349108144307D042F49DE193 /* CoreGraphics.framework */; };
+		31E72712EF9F927BF49381906E7CEBA5 /* RBBLinearInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = E50625B4630E1FD76A0872637C9A38C9 /* RBBLinearInterpolation.m */; };
+		3B2193C88A3E505C7F60BAF0EB7A0AFE /* TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 105B7A4B83C6D177FA42E684EBC52531 /* TTTAttributedLabel-dummy.m */; };
+		3EF48FAB8CB6C5357FCE0EA55EF89F62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */; };
+		48D134D4531616AE2DB1084A034C269F /* RBBEasingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2758EFE33836E4EA55A9D7023C4D237A /* RBBEasingFunction.m */; };
+		598C6F2119E9A189121B283E3E2D8BF3 /* RBBAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E8950EFF5DB19E46AF177A858A91F1 /* RBBAnimation-dummy.m */; };
+		5A2D2F30483C96383386FCBD278990FA /* RBBCubicBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 74178295654151DDC0AEED254791D24C /* RBBCubicBezier.m */; };
+		5AB755C114176D54DB568F05D7E00288 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */; };
+		76DCCFD2466CC24447D104161679C61B /* RBBCubicBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = 7438AD8B615DFEAE8274D15C6B832C1A /* RBBCubicBezier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7F21F548BCC2C61C8E22B670CEB7037D /* RBBLinearInterpolation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8726D72EB150EF0BFE6E6F336D8A6C20 /* RBBLinearInterpolation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8004FD26E5AF8763446E1911D641E90A /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE086097262850BDD40F208B1847485 /* CAAnimation+Blocks.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		83474034DC55A5D06F51C0868147B607 /* RBBCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FF0F939E72A88697D05A050D91D49A /* RBBCustomAnimation.m */; };
+		A4851B6BC5E06E4E4A5C0778D5D77BAF /* RBBCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF009AF52A1C483BAC81BAD681B21E5 /* RBBCustomAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A6773F0FF9A8CA71D8176AAA20222496 /* CAAnimationBlocks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFF4CBA45B9E5026A887B5DD6A2E91C /* CAAnimationBlocks-dummy.m */; };
+		ACCC2E30F39DA1304705E1DC0E18DF13 /* RBBAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CF565E43F5BFBFA4677998C93AB76C /* RBBAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADA374C69E66176B8E1D6E186A0978D0 /* RBBSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2013B8EED10548BD74FF3CE60862ED09 /* RBBSpringAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C405EAC12E75DF0DD52E99D498D3275A /* RBBTweenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98384C298CB3CE5E209246C44269FD53 /* RBBTweenAnimation.m */; };
+		C57BB741830A9C38C08A1001F12EF9B7 /* RBBSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6F7734CDC7662D6D68FBF45BEB4E94 /* RBBSpringAnimation.m */; };
+		C6A37D3F296E1F963966A27E10BB3E1B /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51897811962AF1ED0DD04F77877210E3 /* TTTAttributedLabel.m */; };
+		C8BAFC3AE977B4A49AC5BF23301A891C /* RBBEasingFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E9D3829BD9EE9BC7E75587C7106F6A /* RBBEasingFunction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C93E1EEE90380D4DE5DC9603FFB04311 /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F7ACD49EBE295CB2B2EE732DCEC353A /* TTTAttributedLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D2C1CCF80D155A1D22C347E83E6C3BB6 /* RBBBlockBasedArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C17728B8A6561F6C4E343158C403A3B /* RBBBlockBasedArray.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4776E4CB8D070E7B728CC194DFF4E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		D63AE37FAA44FB8D649B20B993973534 /* RBBBlockBasedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B95F0BC2003362F80E5E0AB037370A1E /* RBBBlockBasedArray.m */; };
+		F3604384DCB0CFDF4E0F4605FA12DCB9 /* CAAnimation+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F41F70ABE113038346789550E48630 /* CAAnimation+Blocks.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F464396424307271B9EA2271DAF878E3 /* RBBTweenAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 861C622A966CE5AAE867963E0100778E /* RBBTweenAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F99C5EA6A9CDC3FB68F88ABDB718C445 /* RBBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BEA5212101DC21AB785ED3A77CF675 /* RBBAnimation.m */; };
+		FC944856C249B13C8091AB6018DD103A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */; };
+		FF6C21A79476FBAD220C7CBE9B8A9BD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18AC7F0F024836035C8DBF75523627DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C58AA1A2855208337C4E13D8ED53A16;
+			remoteInfo = CAAnimationBlocks;
+		};
+		F09F28DB80EF5A96C36EC5FB2A235D48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F81E29DBE6332F291B76E5FC3228D186;
+			remoteInfo = RBBAnimation;
+		};
+		FEA2777FF9A52CED3B594EFA225BC446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39B4817B9B7E14ED688D175FAFB480F7;
+			remoteInfo = TTTAttributedLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036F0801EA3D041AB12F0B1DF3A1B1D3 /* Pods-XMCustomAlertViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XMCustomAlertViewDemo-dummy.m"; sourceTree = "<group>"; };
+		04597ABA41D6166DFA9BE460EFC94728 /* TTTAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTTAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		0F7ACD49EBE295CB2B2EE732DCEC353A /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
+		105B7A4B83C6D177FA42E684EBC52531 /* TTTAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTTAttributedLabel-dummy.m"; sourceTree = "<group>"; };
+		2013B8EED10548BD74FF3CE60862ED09 /* RBBSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBBSpringAnimation.h; path = RBBAnimation/RBBSpringAnimation.h; sourceTree = "<group>"; };
+		2758EFE33836E4EA55A9D7023C4D237A /* RBBEasingFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBBEasingFunction.m; path = RBBAnimation/RBBEasingFunction.m; sourceTree = "<group>"; };
+		306DCE5D1B1F2051C217122478532016 /* Pods-XMCustomAlertViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XMCustomAlertViewDemo-frameworks.sh"; sourceTree = "<group>"; };
+		32E2B04BC1935A86EB34129AA71C7D83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3567FF07CB963F439D11CDEE89D10530 /* CAAnimationBlocks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAAnimationBlocks-prefix.pch"; sourceTree = "<group>"; };
+		37C9208F0C48CE4CE43D446242A63C79 /* Pods-XMCustomAlertViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMCustomAlertViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3A49A6BDDDF254BA5844F7D3F45ADDCC /* Pods-XMCustomAlertViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XMCustomAlertViewDemo-resources.sh"; sourceTree = "<group>"; };
+		41B17D2F62C6471240212225B4F74BF6 /* CAAnimationBlocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CAAnimationBlocks.xcconfig; sourceTree = "<group>"; };
+		51897811962AF1ED0DD04F77877210E3 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
+		538EC4055DC8CD079D99470CE7EB3831 /* libCAAnimationBlocks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCAAnimationBlocks.a; path = libCAAnimationBlocks.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BEA5212101DC21AB785ED3A77CF675 /* RBBAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBBAnimation.m; path = RBBAnimation/RBBAnimation.m; sourceTree = "<group>"; };
+		5C17728B8A6561F6C4E343158C403A3B /* RBBBlockBasedArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBBBlockBasedArray.h; path = RBBAnimation/RBBBlockBasedArray.h; sourceTree = "<group>"; };
+		5ED19703598721746FF3C3806DB47155 /* Pods-XMCustomAlertViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMCustomAlertViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6AF009AF52A1C483BAC81BAD681B21E5 /* RBBCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBBCustomAnimation.h; path = RBBAnimation/RBBCustomAnimation.h; sourceTree = "<group>"; };
+		6F6F7734CDC7662D6D68FBF45BEB4E94 /* RBBSpringAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBBSpringAnimation.m; path = RBBAnimation/RBBSpringAnimation.m; sourceTree = "<group>"; };
+		71FF0F939E72A88697D05A050D91D49A /* RBBCustomAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBBCustomAnimation.m; path = RBBAnimation/RBBCustomAnimation.m; sourceTree = "<group>"; };
+		74178295654151DDC0AEED254791D24C /* RBBCubicBezier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBBCubicBezier.m; path = RBBAnimation/RBBCubicBezier.m; sourceTree = "<group>"; };
+		7438AD8B615DFEAE8274D15C6B832C1A /* RBBCubicBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBBCubicBezier.h; path = RBBAnimation/RBBCubicBezier.h; sourceTree = "<group>"; };
+		75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		76E9D3829BD9EE9BC7E75587C7106F6A /* RBBEasingFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBBEasingFunction.h; path = RBBAnimation/RBBEasingFunction.h; sourceTree = "<group>"; };
+		78E8950EFF5DB19E46AF177A858A91F1 /* RBBAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RBBAnimation-dummy.m"; sourceTree = "<group>"; };
+		7BE086097262850BDD40F208B1847485 /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAAnimation+Blocks.m"; path = "CAAnimationBlocks/CAAnimation+Blocks.m"; sourceTree = "<group>"; };
+		7E4EE262349108144307D042F49DE193 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7F5525C44B4D2D6668B27E39C643EB0B /* RBBAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RBBAnimation.xcconfig; sourceTree = "<group>"; };
+		861C622A966CE5AAE867963E0100778E /* RBBTweenAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBBTweenAnimation.h; path = RBBAnimation/RBBTweenAnimation.h; sourceTree = "<group>"; };
+		8726D72EB150EF0BFE6E6F336D8A6C20 /* RBBLinearInterpolation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBBLinearInterpolation.h; path = RBBAnimation/RBBLinearInterpolation.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979CF5EB96DB7368304AA64BBCA47DC7 /* libTTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTTTAttributedLabel.a; path = libTTTAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		98384C298CB3CE5E209246C44269FD53 /* RBBTweenAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBBTweenAnimation.m; path = RBBAnimation/RBBTweenAnimation.m; sourceTree = "<group>"; };
+		9E1407CA406BF5A584AE24441CCB31E5 /* TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		AD112BF3C7921989E573760FF0839670 /* Pods-XMCustomAlertViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMCustomAlertViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B95F0BC2003362F80E5E0AB037370A1E /* RBBBlockBasedArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBBBlockBasedArray.m; path = RBBAnimation/RBBBlockBasedArray.m; sourceTree = "<group>"; };
+		BBFF4CBA45B9E5026A887B5DD6A2E91C /* CAAnimationBlocks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAAnimationBlocks-dummy.m"; sourceTree = "<group>"; };
+		C8CF565E43F5BFBFA4677998C93AB76C /* RBBAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RBBAnimation.h; path = RBBAnimation/RBBAnimation.h; sourceTree = "<group>"; };
+		CAD334DD0068652A534AF750C1C05B31 /* Pods-XMCustomAlertViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XMCustomAlertViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC7647E711DF227E8CD18D3186F3C60A /* libPods-XMCustomAlertViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-XMCustomAlertViewDemo.a"; path = "libPods-XMCustomAlertViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F41F70ABE113038346789550E48630 /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAAnimation+Blocks.h"; path = "CAAnimationBlocks/CAAnimation+Blocks.h"; sourceTree = "<group>"; };
+		E50625B4630E1FD76A0872637C9A38C9 /* RBBLinearInterpolation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RBBLinearInterpolation.m; path = RBBAnimation/RBBLinearInterpolation.m; sourceTree = "<group>"; };
+		E659F10915CA70A6E7FF0C5A2D3DF943 /* libRBBAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRBBAnimation.a; path = libRBBAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57AFBEE4278581704940F10D79934D8 /* RBBAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBBAnimation-prefix.pch"; sourceTree = "<group>"; };
+		F59D694A9020F0959A3D1601E40BACC9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42D690B13508ECB01BE707E5E877F888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6C21A79476FBAD220C7CBE9B8A9BD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DBB7AD5EE20CD15D7C1C4B0506A0A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F85880D08C31D8F7413BB0F3F68080E /* Foundation.framework in Frameworks */,
+				3EF48FAB8CB6C5357FCE0EA55EF89F62 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAA7026ADC18E227A936CFA1DE86327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6A5029939CE815234A03238ED64F9D /* CoreGraphics.framework in Frameworks */,
+				09942E83C4A50A3D7D63DA2AD30F1F4D /* CoreText.framework in Frameworks */,
+				01E832B6670106D266CADE1AD4BFCE49 /* Foundation.framework in Frameworks */,
+				5AB755C114176D54DB568F05D7E00288 /* QuartzCore.framework in Frameworks */,
+				1A3D6569DAF7CE55594A482205F5EA30 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4E72878AE7FE77BF38905F543751E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4776E4CB8D070E7B728CC194DFF4E04 /* Foundation.framework in Frameworks */,
+				FC944856C249B13C8091AB6018DD103A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049D70BE3E23894E45F801C2F8AFB77E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F76C5A047A6E76EB68C01E8CFA89F68D /* Pods-XMCustomAlertViewDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1AED223C0EE13960FEA2CF64E4463BFF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F5525C44B4D2D6668B27E39C643EB0B /* RBBAnimation.xcconfig */,
+				78E8950EFF5DB19E46AF177A858A91F1 /* RBBAnimation-dummy.m */,
+				F57AFBEE4278581704940F10D79934D8 /* RBBAnimation-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RBBAnimation";
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD3B6667F06509663DDD01426DEE151E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		459C43507F71C4CC82628F7681BA1B98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				538EC4055DC8CD079D99470CE7EB3831 /* libCAAnimationBlocks.a */,
+				CC7647E711DF227E8CD18D3186F3C60A /* libPods-XMCustomAlertViewDemo.a */,
+				E659F10915CA70A6E7FF0C5A2D3DF943 /* libRBBAnimation.a */,
+				979CF5EB96DB7368304AA64BBCA47DC7 /* libTTTAttributedLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		581F045BA5594A29430B45A04142F19F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66B163E9AD268FF515FCE7054C61A4B0 /* CAAnimationBlocks */,
+				74BB96551210B73B06B5D69B68BC38CA /* RBBAnimation */,
+				9659163622EE40FEB3EC7F37E4083469 /* TTTAttributedLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66B163E9AD268FF515FCE7054C61A4B0 /* CAAnimationBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				D4F41F70ABE113038346789550E48630 /* CAAnimation+Blocks.h */,
+				7BE086097262850BDD40F208B1847485 /* CAAnimation+Blocks.m */,
+				CF554FA72E2FCE7E463C1D84F960C1C3 /* Support Files */,
+			);
+			name = CAAnimationBlocks;
+			path = CAAnimationBlocks;
+			sourceTree = "<group>";
+		};
+		74BB96551210B73B06B5D69B68BC38CA /* RBBAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C8CF565E43F5BFBFA4677998C93AB76C /* RBBAnimation.h */,
+				56BEA5212101DC21AB785ED3A77CF675 /* RBBAnimation.m */,
+				5C17728B8A6561F6C4E343158C403A3B /* RBBBlockBasedArray.h */,
+				B95F0BC2003362F80E5E0AB037370A1E /* RBBBlockBasedArray.m */,
+				7438AD8B615DFEAE8274D15C6B832C1A /* RBBCubicBezier.h */,
+				74178295654151DDC0AEED254791D24C /* RBBCubicBezier.m */,
+				6AF009AF52A1C483BAC81BAD681B21E5 /* RBBCustomAnimation.h */,
+				71FF0F939E72A88697D05A050D91D49A /* RBBCustomAnimation.m */,
+				76E9D3829BD9EE9BC7E75587C7106F6A /* RBBEasingFunction.h */,
+				2758EFE33836E4EA55A9D7023C4D237A /* RBBEasingFunction.m */,
+				8726D72EB150EF0BFE6E6F336D8A6C20 /* RBBLinearInterpolation.h */,
+				E50625B4630E1FD76A0872637C9A38C9 /* RBBLinearInterpolation.m */,
+				2013B8EED10548BD74FF3CE60862ED09 /* RBBSpringAnimation.h */,
+				6F6F7734CDC7662D6D68FBF45BEB4E94 /* RBBSpringAnimation.m */,
+				861C622A966CE5AAE867963E0100778E /* RBBTweenAnimation.h */,
+				98384C298CB3CE5E209246C44269FD53 /* RBBTweenAnimation.m */,
+				1AED223C0EE13960FEA2CF64E4463BFF /* Support Files */,
+			);
+			name = RBBAnimation;
+			path = RBBAnimation;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				581F045BA5594A29430B45A04142F19F /* Pods */,
+				459C43507F71C4CC82628F7681BA1B98 /* Products */,
+				049D70BE3E23894E45F801C2F8AFB77E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9659163622EE40FEB3EC7F37E4083469 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0F7ACD49EBE295CB2B2EE732DCEC353A /* TTTAttributedLabel.h */,
+				51897811962AF1ED0DD04F77877210E3 /* TTTAttributedLabel.m */,
+				AFB459143E37458DB448176290D2BADE /* Support Files */,
+			);
+			name = TTTAttributedLabel;
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		AFB459143E37458DB448176290D2BADE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				04597ABA41D6166DFA9BE460EFC94728 /* TTTAttributedLabel.xcconfig */,
+				105B7A4B83C6D177FA42E684EBC52531 /* TTTAttributedLabel-dummy.m */,
+				9E1407CA406BF5A584AE24441CCB31E5 /* TTTAttributedLabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTTAttributedLabel";
+			sourceTree = "<group>";
+		};
+		CF554FA72E2FCE7E463C1D84F960C1C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41B17D2F62C6471240212225B4F74BF6 /* CAAnimationBlocks.xcconfig */,
+				BBFF4CBA45B9E5026A887B5DD6A2E91C /* CAAnimationBlocks-dummy.m */,
+				3567FF07CB963F439D11CDEE89D10530 /* CAAnimationBlocks-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CAAnimationBlocks";
+			sourceTree = "<group>";
+		};
+		F76C5A047A6E76EB68C01E8CFA89F68D /* Pods-XMCustomAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CAD334DD0068652A534AF750C1C05B31 /* Pods-XMCustomAlertViewDemo-acknowledgements.markdown */,
+				5ED19703598721746FF3C3806DB47155 /* Pods-XMCustomAlertViewDemo-acknowledgements.plist */,
+				036F0801EA3D041AB12F0B1DF3A1B1D3 /* Pods-XMCustomAlertViewDemo-dummy.m */,
+				306DCE5D1B1F2051C217122478532016 /* Pods-XMCustomAlertViewDemo-frameworks.sh */,
+				3A49A6BDDDF254BA5844F7D3F45ADDCC /* Pods-XMCustomAlertViewDemo-resources.sh */,
+				37C9208F0C48CE4CE43D446242A63C79 /* Pods-XMCustomAlertViewDemo.debug.xcconfig */,
+				AD112BF3C7921989E573760FF0839670 /* Pods-XMCustomAlertViewDemo.release.xcconfig */,
+			);
+			name = "Pods-XMCustomAlertViewDemo";
+			path = "Target Support Files/Pods-XMCustomAlertViewDemo";
+			sourceTree = "<group>";
+		};
+		FD3B6667F06509663DDD01426DEE151E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7E4EE262349108144307D042F49DE193 /* CoreGraphics.framework */,
+				F59D694A9020F0959A3D1601E40BACC9 /* CoreText.framework */,
+				FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */,
+				75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */,
+				32E2B04BC1935A86EB34129AA71C7D83 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		46CCE8E75BAD6AC5A324D35963B6B3D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3604384DCB0CFDF4E0F4605FA12DCB9 /* CAAnimation+Blocks.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779A75847001A6752CD2B7025E43DAE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCC2E30F39DA1304705E1DC0E18DF13 /* RBBAnimation.h in Headers */,
+				D2C1CCF80D155A1D22C347E83E6C3BB6 /* RBBBlockBasedArray.h in Headers */,
+				76DCCFD2466CC24447D104161679C61B /* RBBCubicBezier.h in Headers */,
+				A4851B6BC5E06E4E4A5C0778D5D77BAF /* RBBCustomAnimation.h in Headers */,
+				C8BAFC3AE977B4A49AC5BF23301A891C /* RBBEasingFunction.h in Headers */,
+				7F21F548BCC2C61C8E22B670CEB7037D /* RBBLinearInterpolation.h in Headers */,
+				ADA374C69E66176B8E1D6E186A0978D0 /* RBBSpringAnimation.h in Headers */,
+				F464396424307271B9EA2271DAF878E3 /* RBBTweenAnimation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F259759927B1611D5A653C77CAE96714 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93E1EEE90380D4DE5DC9603FFB04311 /* TTTAttributedLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C58AA1A2855208337C4E13D8ED53A16 /* CAAnimationBlocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01B56E4BB6FE37058EF521FCD2B3332 /* Build configuration list for PBXNativeTarget "CAAnimationBlocks" */;
+			buildPhases = (
+				848EE8CCE282328383683008C7CBC0B0 /* Sources */,
+				CD4E72878AE7FE77BF38905F543751E8 /* Frameworks */,
+				46CCE8E75BAD6AC5A324D35963B6B3D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAAnimationBlocks;
+			productName = CAAnimationBlocks;
+			productReference = 538EC4055DC8CD079D99470CE7EB3831 /* libCAAnimationBlocks.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		39B4817B9B7E14ED688D175FAFB480F7 /* TTTAttributedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29BB0A9D2B90909F4C474A1201C5674 /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */;
+			buildPhases = (
+				084B87393D801A0B95D0BD9EE93D84BA /* Sources */,
+				6BAA7026ADC18E227A936CFA1DE86327 /* Frameworks */,
+				F259759927B1611D5A653C77CAE96714 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTTAttributedLabel;
+			productName = TTTAttributedLabel;
+			productReference = 979CF5EB96DB7368304AA64BBCA47DC7 /* libTTTAttributedLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6ADCD11DA0963951BC0CE51E4496C66B /* Pods-XMCustomAlertViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B2648EE581A53C16852844E5B754BDD /* Build configuration list for PBXNativeTarget "Pods-XMCustomAlertViewDemo" */;
+			buildPhases = (
+				7AC2FA14B30F8FC9A9BCCE2D3472A7ED /* Sources */,
+				42D690B13508ECB01BE707E5E877F888 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE9DCD35BB87D0136CE1505CA74064BB /* PBXTargetDependency */,
+				3F331687897873EA130CE01E86F2FFC5 /* PBXTargetDependency */,
+				D2BA93A89308B45C88F7613A4689791D /* PBXTargetDependency */,
+			);
+			name = "Pods-XMCustomAlertViewDemo";
+			productName = "Pods-XMCustomAlertViewDemo";
+			productReference = CC7647E711DF227E8CD18D3186F3C60A /* libPods-XMCustomAlertViewDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F81E29DBE6332F291B76E5FC3228D186 /* RBBAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87C68FB6E2B8CEF41A0F039BB5E602D /* Build configuration list for PBXNativeTarget "RBBAnimation" */;
+			buildPhases = (
+				9CF2DF89BB3364E0992C49F470C5417D /* Sources */,
+				5DBB7AD5EE20CD15D7C1C4B0506A0A02 /* Frameworks */,
+				779A75847001A6752CD2B7025E43DAE8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBBAnimation;
+			productName = RBBAnimation;
+			productReference = E659F10915CA70A6E7FF0C5A2D3DF943 /* libRBBAnimation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 459C43507F71C4CC82628F7681BA1B98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C58AA1A2855208337C4E13D8ED53A16 /* CAAnimationBlocks */,
+				6ADCD11DA0963951BC0CE51E4496C66B /* Pods-XMCustomAlertViewDemo */,
+				F81E29DBE6332F291B76E5FC3228D186 /* RBBAnimation */,
+				39B4817B9B7E14ED688D175FAFB480F7 /* TTTAttributedLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		084B87393D801A0B95D0BD9EE93D84BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2193C88A3E505C7F60BAF0EB7A0AFE /* TTTAttributedLabel-dummy.m in Sources */,
+				C6A37D3F296E1F963966A27E10BB3E1B /* TTTAttributedLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AC2FA14B30F8FC9A9BCCE2D3472A7ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A48B2242B9499A92155F6764425D3F /* Pods-XMCustomAlertViewDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848EE8CCE282328383683008C7CBC0B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8004FD26E5AF8763446E1911D641E90A /* CAAnimation+Blocks.m in Sources */,
+				A6773F0FF9A8CA71D8176AAA20222496 /* CAAnimationBlocks-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2DF89BB3364E0992C49F470C5417D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				598C6F2119E9A189121B283E3E2D8BF3 /* RBBAnimation-dummy.m in Sources */,
+				F99C5EA6A9CDC3FB68F88ABDB718C445 /* RBBAnimation.m in Sources */,
+				D63AE37FAA44FB8D649B20B993973534 /* RBBBlockBasedArray.m in Sources */,
+				5A2D2F30483C96383386FCBD278990FA /* RBBCubicBezier.m in Sources */,
+				83474034DC55A5D06F51C0868147B607 /* RBBCustomAnimation.m in Sources */,
+				48D134D4531616AE2DB1084A034C269F /* RBBEasingFunction.m in Sources */,
+				31E72712EF9F927BF49381906E7CEBA5 /* RBBLinearInterpolation.m in Sources */,
+				C57BB741830A9C38C08A1001F12EF9B7 /* RBBSpringAnimation.m in Sources */,
+				C405EAC12E75DF0DD52E99D498D3275A /* RBBTweenAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F331687897873EA130CE01E86F2FFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RBBAnimation;
+			target = F81E29DBE6332F291B76E5FC3228D186 /* RBBAnimation */;
+			targetProxy = F09F28DB80EF5A96C36EC5FB2A235D48 /* PBXContainerItemProxy */;
+		};
+		AE9DCD35BB87D0136CE1505CA74064BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CAAnimationBlocks;
+			target = 0C58AA1A2855208337C4E13D8ED53A16 /* CAAnimationBlocks */;
+			targetProxy = 18AC7F0F024836035C8DBF75523627DE /* PBXContainerItemProxy */;
+		};
+		D2BA93A89308B45C88F7613A4689791D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTTAttributedLabel;
+			target = 39B4817B9B7E14ED688D175FAFB480F7 /* TTTAttributedLabel */;
+			targetProxy = FEA2777FF9A52CED3B594EFA225BC446 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F509889186929B2CCFD4ED1E6F527B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04597ABA41D6166DFA9BE460EFC94728 /* TTTAttributedLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C0E8C1F69D2FF6E98B44720BC600685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD112BF3C7921989E573760FF0839670 /* Pods-XMCustomAlertViewDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F9027266E875D7704035EC734ED96B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5525C44B4D2D6668B27E39C643EB0B /* RBBAnimation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RBBAnimation/RBBAnimation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3E37FB098AE76440E29106ADBF00CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CF8548777A88EF35A37A70F90D4EE47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B17D2F62C6471240212225B4F74BF6 /* CAAnimationBlocks.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CAAnimationBlocks/CAAnimationBlocks-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFD16AF4650A4D40C6E34AE6F28E50C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5525C44B4D2D6668B27E39C643EB0B /* RBBAnimation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RBBAnimation/RBBAnimation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3A770C152C9E68B65337B4D56428BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04597ABA41D6166DFA9BE460EFC94728 /* TTTAttributedLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA03565BE765DB55C6448FB363A44481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F71A4CF82FE984DFF2A0F7BF83CF0A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B17D2F62C6471240212225B4F74BF6 /* CAAnimationBlocks.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CAAnimationBlocks/CAAnimationBlocks-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBD42AA3BC0E4B3B415F4DB9697F2B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C9208F0C48CE4CE43D446242A63C79 /* Pods-XMCustomAlertViewDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E37FB098AE76440E29106ADBF00CEB /* Debug */,
+				DA03565BE765DB55C6448FB363A44481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B2648EE581A53C16852844E5B754BDD /* Build configuration list for PBXNativeTarget "Pods-XMCustomAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD42AA3BC0E4B3B415F4DB9697F2B4E /* Debug */,
+				7C0E8C1F69D2FF6E98B44720BC600685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A87C68FB6E2B8CEF41A0F039BB5E602D /* Build configuration list for PBXNativeTarget "RBBAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F9027266E875D7704035EC734ED96B3 /* Debug */,
+				CFD16AF4650A4D40C6E34AE6F28E50C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01B56E4BB6FE37058EF521FCD2B3332 /* Build configuration list for PBXNativeTarget "CAAnimationBlocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8548777A88EF35A37A70F90D4EE47C /* Debug */,
+				F71A4CF82FE984DFF2A0F7BF83CF0A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29BB0A9D2B90909F4C474A1201C5674 /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F509889186929B2CCFD4ED1E6F527B0 /* Debug */,
+				D3A770C152C9E68B65337B4D56428BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
