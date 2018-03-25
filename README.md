@@ -1,1 +1,129 @@
 # XMCustomAlertView
+## 功能
+- UIAlertView功能
+- 优先级
+- 有效期
+- 界面自由组合
+- 自定义动画效果
+- 带有页面属性的AlertView
+## 依赖的环境
+- iOS 7.0 +
+- CAAnimationBlocks 0.0.1
+- RBBAnimation 0.3.0
+- TTTAttributedLabel 2.0.0
+## 使用方法
+- 头文件
+```
+#import "XMCustomAlertView_Define.h"
+```
+1. 便利方法 
+```
+//代理模式
+XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithTitle:@"自定义弹框" message:@"我是一个通过便利方法生成的自定义弹框控件" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+[alertView show];
+//代码块模式
+XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithTitle:@"自定义弹框" message:@"我是一个通过便利方法生成的自定义弹框控件" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@[@"确定"] clickHandler:^(XMCustomAlertView * _Nonnull alertView, NSInteger buttonIndex) {
+        NSLog(@"弹框被点击");
+}];
+[alertView show];
+```
+
+![便利方法构造]
+2. 修改标题、内容、按钮
+```
+XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithTitle:@"自定义弹框" message:@"我是一个通过便利方法生成的自定义弹框控件" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+[alertView setTitle:@"修改标题"];
+[alertView setMessage:@"修改自定义弹框内容"];
+[alertView setButtonInfoWithIndex:1 blcok:^(XMAlertViewButtonBuilder * _Nonnull buttonBuilder) {
+    buttonBuilder.buttoncolor = [UIColor redColor];
+}];
+[alertView show];
+```
+![修改弹框内容](https://upload-images.jianshu.io/upload_images/1776603-cf86a7dc1adb3526.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+3. UI界面自由组合
+ - UI界面自由组合需要界面控件库的支持，目前库中有标题、正文、按钮、合同、滑动块控件
+```
+XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithConfigurationHandler:nil];
+XMCustomAlertViewCustomTitle *customtTitle = [XMCustomAlertViewCustomTitle customTitleWithConfigurationHandler:^(XMAlertViewTitleBuilder * _Nonnull titleBuilder) {
+    titleBuilder.title = @"合同项目";
+    titleBuilder.titleColor = [UIColor redColor];
+}];
+XMCustomAlertViewCustomMessage *customMessage = [XMCustomAlertViewCustomMessage customMessageWithConfigurationHandler:^(XMAlertViewMessageBuilder * _Nonnull messageBuilder) {
+    messageBuilder.message = @"一部法律根据《立法法》第六十一条的规定，一般由编、章、节、条、款、项、目组成。编、章、节是对法条的归类。所以，在使用法律时只需引用到条、款、项、目即可，无需指出该条所在的编、章、节。";
+}];
+XMCustomAlertViewCustomContract *customContract = [XMCustomAlertViewCustomContract contractWithConfigurationHandler:^(XMAlertViewContractBuilder * _Nonnull contractBuilder) {
+    XMAlertViewContractModel *contractModel1 = [XMAlertViewContractModel contractModelWithText:@"勾选及代表您同意" linkable:NO action:nil];
+    XMAlertViewContractModel *contractModel2 = [XMAlertViewContractModel contractModelWithText:@"《立法法》" linkable:YES action:^(XMAlertViewContractModel *contractModel) {
+        NSLog(@"条款被点击");
+    }];
+    XMAlertViewContractModel *contractModel3 = [XMAlertViewContractModel contractModelWithText:@"相关条款" linkable:NO action:nil];
+    contractBuilder.contractModelArray = @[contractModel1, contractModel2, contractModel3];
+    contractBuilder.checkable = YES;
+} checkboxAction:^(BOOL agreeContract) {
+        NSLog(@"同意/拒绝合同");
+}];
+XMCustomAlertViewAction *action = [XMCustomAlertViewAction actionWithConfigurationHandler:^(XMAlertViewButtonBuilder * _Nonnull buttonBuilder) {
+    buttonBuilder.buttonTitle = @"取消";
+} clickHander:^(XMCustomAlertViewAction * _Nonnull action) {
+    NSLog(@"取消按钮被点击");
+}];
+[alertView addCustomViewWithControl:customtTitle];
+[alertView addCustomViewWithControl:customMessage];
+[alertView addCustomViewWithControl:customContract];
+[alertView addAction:action];
+[alertView show];
+```
+![界面元素自由组合](https://upload-images.jianshu.io/upload_images/1776603-655f9fa83f9d1b81.gif?imageMogr2/auto-orient/strip)
+4. 自定义动画效果
+    - 目前可以自动弹框入场和出场动画，库中有淡入淡出、左右飞入飞出、上下飞入飞出。当然，有兴趣可以自己扩展
+```
+XMCustomAlertView *alertView1 = [[XMCustomAlertView alloc] initWithTitle:@"动画" message:@"我是个实现了系统动画的弹框，可以淡入淡出" delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil];
+[alertView1 modifyConfigurationContextWithHandler:^(XMAlertViewConfigurationContext * _Nonnull configurationContext) {
+    configurationContext.showAnimation = [[XMAlertViewSystemAnimationFactory new] showAnimation];
+    configurationContext.dismissAnimation = [[XMAlertViewSystemAnimationFactory new] dismissAnimation];
+}];
+[alertView1 show];
+XMCustomAlertView *alertView2 = [[XMCustomAlertView alloc] initWithTitle:@"动画" message:@"我是个从右->左出现，从左->右消失的弹框" delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil];
+[alertView2 modifyConfigurationContextWithHandler:^(XMAlertViewConfigurationContext * _Nonnull configurationContext) {
+    configurationContext.showAnimation = [[XMAlertViewRightToLeftAnimationFactory new] showAnimation];
+    configurationContext.dismissAnimation = [[XMAlertViewRightToLeftAnimationFactory new] dismissAnimation];
+}];
+[alertView2 show];
+XMCustomAlertView *alertView3 = [[XMCustomAlertView alloc] initWithTitle:@"动画" message:@"我是个从下->上出现，从上->下消失的弹框" delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil];
+[alertView3 modifyConfigurationContextWithHandler:^(XMAlertViewConfigurationContext * _Nonnull configurationContext) {
+    configurationContext.showAnimation = [[XMAlertViewDownToUpAnimationFactory new] showAnimation];
+    configurationContext.dismissAnimation = [[XMAlertViewDownToUpAnimationFactory new] dismissAnimation];
+}];
+[alertView3 show];
+```
+![自定义弹框动画](https://upload-images.jianshu.io/upload_images/1776603-45f74c96dec27f70.gif?imageMogr2/auto-orient/strip)
+5. 具有页面属性的弹框
+    - 这种弹框只能在指定的页面弹出，必要时会跟着页面的消失而消失
+```
+///在页面显示时调用
+[XMCustomAlertView xm_showMessageWithPageIdentifier:@"pageIdentifier" delegateObject:self];
+///在页面即将消失时调用
+[XMCustomAlertView xm_dismissShowingAlertViewWithPageIdentifier:@"pageIdentifier"];
+///其他页面可以设置"pageIdentifier"页面属性的弹框
+XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithTitle:@"页面弹框" message:@"这是个只能在指定页面弹出的弹框" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil];
+[alertView xm_pushMessageWithPageIdentifier:@"pageIdentifier"];
+```
+6. 其他
+ - 指定弹框的父视图
+```
+[alertView showInSuperView:viewA];
+```
+- 弹框上显示Toast提示
+```
+[alertView showAutoDismissTips:@"Toast提示" delayTime:0.5f];
+```
+- 弹框可以设置是否跟着屏幕一起旋转
+```
+alertView.autoRotate = YES;
+```
+- 当然还有一些唯一性判断，此处不再赘述
+7. 作者
+主页：https://www.jianshu.com/u/0bf8dc16b794
+邮箱：fang.x.m@qq.com
+
+

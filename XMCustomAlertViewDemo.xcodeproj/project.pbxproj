@@ -200,8 +200,8 @@
 		9D768C8D205583E6009CC72D /* AutoDismiss */ = {
 			isa = PBXGroup;
 			children = (
-				9D768C8E205583E6009CC72D /* XMCustomAlertViewAutoDismiss.m */,
 				9D768C8F205583E6009CC72D /* XMCustomAlertViewAutoDismiss.h */,
+				9D768C8E205583E6009CC72D /* XMCustomAlertViewAutoDismiss.m */,
 			);
 			path = AutoDismiss;
 			sourceTree = "<group>";
