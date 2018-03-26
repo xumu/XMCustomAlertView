@@ -1,11 +1,12 @@
-# XMCustomAlertView
+##简介
+在iOS项目迭代过程中我们经常会增加新的功能，然后还需要有新功能引导。实际情况是我们常常会看见系统的UIAlertView覆盖在引导页面上，给用户体验增加一层蒙阴。更极端的情况是产品常常希望弹框还需要分优先级依次弹出，或者弹框只能在特定页面出现。于是就有了XMCustomAlertView的诞生。
 ## 功能
-- UIAlertView功能
-- 优先级
-- 有效期
-- 界面自由组合
-- 自定义动画效果
-- 带有页面属性的AlertView
+- [x] UIAlertView功能
+- [x] 优先级
+- [x] 有效期
+- [x] 界面自由组合
+- [x] 自定义动画效果
+- [x] 带有页面属性的AlertView
 ## 依赖的环境
 - iOS 7.0 +
 - CAAnimationBlocks 0.0.1
@@ -27,8 +28,8 @@ XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithTitle:@"自定
 }];
 [alertView show];
 ```
+![便利方法](https://upload-images.jianshu.io/upload_images/1776603-efe3bad3db2007b4.gif?imageMogr2/auto-orient/strip)
 
-![便利方法构造]
 2. 修改标题、内容、按钮
 ```
 XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithTitle:@"自定义弹框" message:@"我是一个通过便利方法生成的自定义弹框控件" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
@@ -39,7 +40,8 @@ XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithTitle:@"自定
 }];
 [alertView show];
 ```
-![修改弹框内容](https://upload-images.jianshu.io/upload_images/1776603-cf86a7dc1adb3526.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![修改弹框内容](https://upload-images.jianshu.io/upload_images/1776603-1f2da203b716a62e.gif?imageMogr2/auto-orient/strip)
+
 3. UI界面自由组合
  - UI界面自由组合需要界面控件库的支持，目前库中有标题、正文、按钮、合同、滑动块控件
 ```
@@ -73,7 +75,8 @@ XMCustomAlertViewAction *action = [XMCustomAlertViewAction actionWithConfigurati
 [alertView addAction:action];
 [alertView show];
 ```
-![界面元素自由组合](https://upload-images.jianshu.io/upload_images/1776603-655f9fa83f9d1b81.gif?imageMogr2/auto-orient/strip)
+![界面元素自由组合](https://upload-images.jianshu.io/upload_images/1776603-6abb427ff63ab90c.gif?imageMogr2/auto-orient/strip)
+
 4. 自定义动画效果
     - 目前可以自动弹框入场和出场动画，库中有淡入淡出、左右飞入飞出、上下飞入飞出。当然，有兴趣可以自己扩展
 ```
@@ -121,9 +124,11 @@ XMCustomAlertView *alertView = [[XMCustomAlertView alloc] initWithTitle:@"页面
 ```
 alertView.autoRotate = YES;
 ```
-- 当然还有一些唯一性判断，此处不再赘述
+- 当然你也可以完全定制你私人的UI界面
+```
+[alertView addCustomViewWithView:CustomView];
+```
+- 还有一些唯一性判断逻辑，此处不再赘述。
 7. 作者
 主页：https://www.jianshu.com/u/0bf8dc16b794
 邮箱：fang.x.m@qq.com
-
-
