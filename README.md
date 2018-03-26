@@ -134,6 +134,6 @@ alertView.autoRotate = YES;
 [alertView addCustomViewWithView:CustomView];
 ```
 - 还有一些唯一性判断逻辑，此处不再赘述。
-7. 作者
+## 作者
 - [主页](https://www.jianshu.com/u/0bf8dc16b794)
 - [邮箱](fang.x.m@qq.com)
